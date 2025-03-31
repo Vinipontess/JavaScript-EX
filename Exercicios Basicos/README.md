@@ -20,4 +20,7 @@
   Utilize some() para verificar se há algum número maior que um número de sua escolha<br>
 *  **Exercício 10: Verificando se todos os números são pares utilizando every()**<br>
   Utilizando every() verifique se todos os números são impar<br>
-
+*  **Exercício 11: Modificando um array com splice()**<br>
+  Remova o segundo elemento do array e substitua-o por "X" usando splice()<br>
+*  **Exercício 12: Copiando uma parte do array usando slice()**<br>
+  Pegue os três primeiros números do array sem modificar o original e crie outro array<br>
