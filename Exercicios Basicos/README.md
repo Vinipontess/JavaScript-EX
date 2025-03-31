@@ -10,3 +10,10 @@
    Dado um array com os seguintes objetos representando livros: título, autor e ano de publicação, crie uma função que utilize o .find() para encontrar o primeiro livro com ano maior que 2010.<br>
 *  **Exercício 5: Ordenando um Array com .sort()** <br>
    Crie uma função que utilize o .sort() para ordenar um array de números de forma decrescente.<br>
+*  **Exercício 6: Ordenar livros por título**<br>
+  Dado um array de objetos que representam livros, ordene-os por título em ordem alfabética (crescente).<br>
+*  **Exercício 7: Filtrar números maiores que 10**<br>
+  Dado um array de números, filtre todos os números que sejam maiores que 10 e imprima o resultado.<br>
+*  **Exercício 8: Encontrar o primeiro número divisível por 3**<br>
+  Dado um array de números, utilize o método find para encontrar o primeiro número divisível por 3.<br>
+  
