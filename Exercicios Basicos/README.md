@@ -16,4 +16,8 @@
   Dado um array de números, filtre todos os números que sejam maiores que 10 e imprima o resultado.<br>
 *  **Exercício 8: Encontrar o primeiro número divisível por 3**<br>
   Dado um array de números, utilize o método find para encontrar o primeiro número divisível por 3.<br>
-  
+*  **Exercício 9: Verificando se há um número maior que... usando some()**<br>
+  Utilize some() para verificar se há algum número maior que um número de sua escolha<br>
+*  **Exercício 10: Verificando se todos os números são pares utilizando every()**<br>
+  Utilizando every() verifique se todos os números são impar<br>
+
