@@ -26,3 +26,12 @@
   Pegue os três primeiros números do array sem modificar o original e crie outro array<br><br>
 
   # Exercícios de JavaScript (DOM)
+
+  *  **Exercício 1: Alterar o Conteúdo de um Elemento com innerHTML**<br>
+  Modificar o conteúdo de um elemento HTML utilizando a propriedade innerHTML<br><br>
+  *  **Exercício 2 e 3: Alterar o Link de um Elemento e Estilo de um Botão com onclick**<br>
+  Manipular o atributo href de um link e alterar o estilo de um botão ao clicar nele. O botão mudará a cor do texto e de fundo, além de alterar seu texto para "Clicado".<br><br>
+  *  **Exercício 4: Esconder um Elemento com display**<br>
+  O objetivo deste exercício é esconder um elemento HTML utilizando a propriedade style.display<br><br>
+  *  **Exercício 5: Adicionar uma Classe CSS ao Botão com classList**<br>
+  Adicionar uma classe CSS a um elemento HTML com o método classList.add()<br><br>
