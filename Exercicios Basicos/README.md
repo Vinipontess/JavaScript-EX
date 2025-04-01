@@ -1,4 +1,4 @@
-## Exercícios de JavaScript
+# Exercícios de JavaScript (Manipulação de array)
 
 * **Exercicio 1: Manipulação de Array com .map()** <br>
   Crie uma função que utilize o método .map() para dobrar todos os números de um array e retornar um novo array com os números dobrados.<br><br>
@@ -24,3 +24,5 @@
   Remova o segundo elemento do array e substitua-o por "X" usando splice()<br><br>
 *  **Exercício 12: Copiando uma parte do array usando slice()**<br>
   Pegue os três primeiros números do array sem modificar o original e crie outro array<br><br>
+
+  # Exercícios de JavaScript (DOM)
