@@ -16,22 +16,31 @@ btnBuscar.addEventListener('click', async function() {
     }
 
     try {
-        const urlAPI = `http://www.omdbapi.com/?apikey=3f8af78a&t=${nomeFilme}`;
-        const resposta = await fetch(urlAPI);
-        const dados = await resposta.json();
+        const omdbUrl = `http://www.omdbapi.com/?apikey=3f8af78a&t=${nomeFilme}`;
+        const omdbResponse = await fetch(omdbUrl);
+        const movieData = await omdbResponse.json();
 
-        if (dados.Response === "True") {
+        if (omdbResponse.ok && movieData.Response === "True") {
+            const plotEmIngles = movieData.Plot;
+            const encodedPlot = encodeURIComponent(plotEmIngles);
+            const translateUrl = `https://api.mymemory.translated.net/get?q=${encodedPlot}&langpair=en|pt`;
+            const translateResponse = await fetch(translateUrl);
+            const translateData = await translateResponse.json();
+
+            movieData.Plot = translateData.responseData.translatedText;
+
             textoResultado.innerText = "";
             divResultado.innerHTML = `
             <div class="movie-card">
-                <h2>${dados.Title} (${dados.Year})</h2>
-                <img src="${dados.Poster}" alt="Poster do filme: ${dados.Title}">
-                <p><strong>Gênero:</strong> ${dados.Genre}</p>
-                <p><strong>Sinopse:</strong> ${dados.Plot}</p>
+                <h2>${movieData.Title} (${movieData.Year})</h2>
+                <img src="${movieData.Poster}" alt="Poster do filme: ${movieData.Title}">
+                <p><strong>Gênero:</strong> ${movieData.Genre}</p>
+                <p><strong>Sinopse:</strong> ${movieData.Plot}</p>
             </div>`;
-            iptFilme.value = ""; 
+            iptFilme.value = "";
         } else {
             textoResultado.innerText = "Filme não encontrado. Digite um filme válido.";
+            iptFilme.value = "";
         }
     } catch (error) {
         console.error("Erro ao buscar dados do filme:", error);
